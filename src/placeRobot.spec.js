@@ -40,7 +40,7 @@ describe('placeRobot', () => {
       );
     });
   });
-  
+
   describe('when new f value is a recognised facing', () => {
     it('should update the facing of the robot', () => {
       expect(placeRobot({ f: 'NORTH' }, 0, 0, 'SOUTH')).toEqual(
