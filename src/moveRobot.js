@@ -2,7 +2,7 @@ import facing from './facing.json';
 import isRobotPlaced from './isRobotPlaced';
 import isValidPlacement from './isValidPlacement';
 
-export default (table) => {
+export default table => {
   const currentFacing = facing[table.f];
 
   if (isRobotPlaced(table) && currentFacing) {

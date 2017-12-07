@@ -16,7 +16,7 @@ describe('isRobotPlaced', () => {
   it('should return false when the table has invalid f coordinate', () => {
     expect(isRobotPlaced({ rows: 5, columns: 5, x: 1, y: 1, f: 'INVALID_FACING' })).toBe(false);
   });
-  
+
   it('should return false when the table has no x coordinate', () => {
     expect(isRobotPlaced({ rows: 5, columns: 5, y: 1, f: 'NORTH' })).toBe(false);
   });
@@ -24,7 +24,7 @@ describe('isRobotPlaced', () => {
   it('should return false when the table has invalid x coordinate', () => {
     expect(isRobotPlaced({ rows: 5, columns: 5, x: -1, y: 1, f: 'NORTH' })).toBe(false);
   });
-  
+
   it('should return false when the table has no y coordinate', () => {
     expect(isRobotPlaced({ rows: 5, columns: 5, x: 1, f: 'NORTH' })).toBe(false);
   });

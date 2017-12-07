@@ -24,4 +24,4 @@ describe('isValidPlacement', () => {
   it('should return false if f is not a known facing value', () => {
     expect(isValidPlacement({ rows: 5, columns: 5 }, 1, 1, 'INVALID_FACING')).toBe(false);
   });
-})
+});
