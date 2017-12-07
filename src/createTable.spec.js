@@ -10,11 +10,12 @@ describe('createTable', () => {
     );
   });
 
-  it('should default x,y coordinates to origin 0,0', () => {
+  it('should not place the robot on the table by default', () => {
     expect(createTable()).toEqual(
       expect.objectContaining({
-        x: 0,
-        y: 0
+        x: null,
+        y: null,
+        f: null
       })
     );
   });
