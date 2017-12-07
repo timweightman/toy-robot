@@ -15,5 +15,9 @@ describe('moveRobot', () => {
         y: 4
       })
     );
-  })
+  });
+
+  it('should ignore the command if the robot has not been placed', () => {
+    expect(moveRobot({ rows: 5, columns: 5 })).toEqual({ rows: 5, columns: 5 });
+  });
 });

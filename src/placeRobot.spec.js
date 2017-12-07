@@ -1,7 +1,7 @@
 import placeRobot from './placeRobot';
 
 describe('placeRobot', () => {
-  it('should place the robot when it has valid x, y and f coordinates', () => {
+  it('should place the robot when the x, y and f coordinates are valid', () => {
     expect(placeRobot({ rows: 5, columns: 5 }, 1, 1, 'NORTH')).toEqual({
       rows: 5,
       columns: 5,
