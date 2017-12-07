@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "pretty": "prettier --single-quote --print-width 100 --write src/**/*.js"
+    "lint": "eslint --fix src/**/*.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["npm run lint", "git add"]
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,9 @@
     "eslint": "^4.12.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.3.1",
+    "husky": "^0.14.3",
     "jest": "^21.2.1",
+    "lint-staged": "^6.0.0",
     "prettier": "^1.9.1"
   }
 }
