@@ -1,4 +1,4 @@
-import facing from './facing.json';
+import facing from './config/facing';
 import isValidPlacement from './isValidPlacement';
 
 export default (table, x, y, f) => {

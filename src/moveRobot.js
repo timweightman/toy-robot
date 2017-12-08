@@ -1,4 +1,4 @@
-import facing from './facing.json';
+import facing from './config/facing';
 import isRobotPlaced from './isRobotPlaced';
 import isValidPlacement from './isValidPlacement';
 
