@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "clean": "rm -rf build",
-    "start": "node build/cli/index.js",
+    "start": "npm run build && node build/cli/index.js",
     "build": "npm run clean && BABEL_ENV=production babel src --out-dir build",
     "test": "jest src",
     "lint": "eslint --fix src/**/*.js",
