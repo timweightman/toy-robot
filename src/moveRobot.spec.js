@@ -20,4 +20,14 @@ describe('moveRobot', () => {
   it('should ignore the command if the robot has not been placed', () => {
     expect(moveRobot({ rows: 5, columns: 5 })).toEqual({ rows: 5, columns: 5 });
   });
+
+  it('should ignore the command if the robot has an invalid placement', () => {
+    expect(moveRobot({ rows: 5, columns: 5, x: -1, y: 1, f: 'NORTH' })).toEqual({
+      rows: 5,
+      columns: 5,
+      x: -1,
+      y: 1,
+      f: 'NORTH'
+    });
+  });
 });
