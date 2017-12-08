@@ -1,4 +1,4 @@
-import facing from './config/facing';
+import facing from '../config/facing';
 
 export default (table, x, y, f) => {
   const isValidX = x >= 0 && x < table.columns;

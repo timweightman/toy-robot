@@ -1,6 +1,6 @@
-import facing from './config/facing';
-import isRobotPlaced from './isRobotPlaced';
-import isValidPlacement from './isValidPlacement';
+import facing from '../config/facing';
+import isRobotPlaced from '../utils/isRobotPlaced';
+import isValidPlacement from '../utils/isValidPlacement';
 
 export default (table, direction) => {
   const currentFacing = facing[table.f];
