@@ -16,6 +16,16 @@
       "git add"
     ]
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git@git.realestate.com.au:recruiting/toy-robot.git"
