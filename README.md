@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/timweightman/toy-robot.svg?branch=master)](https://travis-ci.org/timweightman/toy-robot)
+[![Build Status](https://travis-ci.org/timweightman/toy-robot.svg?branch=master)](https://travis-ci.org/timweightman/toy-robot) [![codecov](https://codecov.io/gh/timweightman/toy-robot/branch/master/graph/badge.svg)](https://codecov.io/gh/timweightman/toy-robot)
 
 # :robot: Toy Robot
 
