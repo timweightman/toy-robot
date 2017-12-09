@@ -4,7 +4,7 @@ import move from '../commands/moveRobot';
 import turn from '../commands/turnRobot';
 import report from '../commands/report';
 
-const PROMPT_STRING = '<< ';
+const PROMPT_STRING = '~ ';
 const EXITS = ['x', 'q', 'exit', 'quit'];
 
 export default (promptForInstruction, output, endSimulation) => {
@@ -19,7 +19,7 @@ export default (promptForInstruction, output, endSimulation) => {
   };
 
   const handleCommand = instruction => {
-    const [command, ...params] = instruction.split(' ');
+    const [command, ...params] = instruction.trim().split(' ');
 
     if (EXITS.includes(command)) {
       endSimulation();

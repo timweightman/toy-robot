@@ -30,6 +30,33 @@ describe('startSimulation', () => {
     expect(mockOutputForReport).lastCalledWith('0,0,NORTH');
   });
 
+  it('should accept commands even if they start with whitespace', () => {
+    const mockPrompt = jest
+      .fn()
+      .mockImplementationOnce((prompt, callback) => callback('     PLACE 0,0,NORTH'))
+      .mockImplementationOnce((prompt, callback) => callback('  REPORT   '));
+
+    const mockOutputForReport = jest.fn();
+
+    startSimulation(mockPrompt, mockOutputForReport);
+
+    expect(mockOutputForReport).lastCalledWith('0,0,NORTH');
+  });
+
+  it('should allow multiple `PLACE` commands', () => {
+    const mockPrompt = jest
+      .fn()
+      .mockImplementationOnce((prompt, callback) => callback('PLACE 0,0,NORTH'))
+      .mockImplementationOnce((prompt, callback) => callback('PLACE 2,2,SOUTH'))
+      .mockImplementationOnce((prompt, callback) => callback('REPORT'));
+
+    const mockOutputForReport = jest.fn();
+
+    startSimulation(mockPrompt, mockOutputForReport);
+
+    expect(mockOutputForReport).lastCalledWith('2,2,SOUTH');
+  });
+
   it('should support the `MOVE` command', () => {
     const mockPrompt = jest
       .fn()

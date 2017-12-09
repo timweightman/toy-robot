@@ -1,9 +1,12 @@
 {
   "name": "toy-robot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Toy robot simulator",
+  "engines": {
+    "node": ">=6.3.1"
+  },
   "scripts": {
-    "clean": "rm -rf build",
+    "clean": "rm -rf build coverage",
     "start": "npm run build && node build/cli/index.js",
     "build": "npm run clean && BABEL_ENV=production babel src --out-dir build",
     "test": "jest src",
