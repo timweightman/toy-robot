@@ -17,6 +17,16 @@ describe('turnRobot', () => {
     );
   });
 
+  it('should ignore the command if the direction is not valid', () => {
+    expect(turnRobot({ rows: 5, columns: 5, x: 1, y: 1, f: 'NORTH' }, 'INVALID')).toEqual({
+      rows: 5,
+      columns: 5,
+      x: 1,
+      y: 1,
+      f: 'NORTH'
+    });
+  });
+
   it('should ignore the command if the robot has not been placed', () => {
     expect(turnRobot({ rows: 5, columns: 5 }, 'RIGHT')).toEqual({ rows: 5, columns: 5 });
   });
