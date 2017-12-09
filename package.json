@@ -31,8 +31,7 @@
     }
   },
   "repository": {
-    "type": "git",
-    "url": "git@github.com:timweightman/toy-robot.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
