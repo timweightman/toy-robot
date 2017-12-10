@@ -22,7 +22,7 @@ Transitions from NORTH / SOUTH / EAST / WEST, when moving or turning, have been 
     
     `npm test -- --coverage --verbose` Print coverage report and detailed test results.
 
-- ``npm start <<< `cat support/cli-smoketest-fixture.txt` `` Auto-run examples from `PROBLEM.md`.
+- ``npm start <<< `cat support/cli-examples.txt` `` Auto-run examples from `PROBLEM.md`.
 
 - `npm start` Start the interactive CLI.
 
