@@ -26,5 +26,7 @@ Transitions from NORTH / SOUTH / EAST / WEST, when moving or turning, have been 
 
 - `npm start` Start the interactive CLI.
 
+- `exit`, `x`, `q`, `quit` Quit the CLI.
+
 # Final thoughts
 Thanks for the opportunity to take part in this coding exercise. It was good fun and I hope you're happy with the quality of my submission.
